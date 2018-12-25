@@ -1,9 +1,14 @@
 <?php
 
+Route::set('index.php', function () {
+  Index::createView('Index');
+});
+
 Route::set('about-us', function () {
-  AboutUs::CreateView();
+  AboutUs::createView('AboutUs');
+  AboutUs::test('test');
 });
 
 Route::set('contact-us', function () {
-  ContactUs::CreateView();
+  ContactUs::createView('ContactUs');
 });

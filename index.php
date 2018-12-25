@@ -10,3 +10,17 @@ spl_autoload_register(function($className) {
 });
 
 require_once __DIR__ . '/Routes.php';
+
+function debug($array)
+{
+  echo '<pre>';
+  print_r($array);
+  echo '</pre>';
+}
+
+function debugVarDump($array)
+{
+  echo '<pre>';
+  var_dump($array);
+  echo '</pre>';
+}

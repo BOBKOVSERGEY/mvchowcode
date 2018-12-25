@@ -1,9 +1,9 @@
 <?php
 
-class Controller
+class Controller extends DB
 {
-  public static function CreateView()
+  public static function createView($viewName)
   {
-    echo 'View created!';
+    require_once __DIR__ . '/../Views/' . $viewName . '.php' ;
   }
 }
